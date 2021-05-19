@@ -3,13 +3,18 @@ This project presents a method to clean a data set of images from duplicates and
 
 Often when we seek to accumulate a large dataset to run a successful neural network model we use more than one sourse of data, which results to duplication of some of the data.
 Naturally this leads to overfitting and poor performance of the model.
+
 In this project I present a simple source to clear the dataset from duplicates and then to augment the dataset sufficiently to train the neural network model.
+
 To illustrate the application of the code, I use the mathematical symbols dataset from https://www.kaggle.com/xainano/handwrittenmathsymbols
 The dataset consists of 82 classes of images including mathematical symbols, letters and some elementary functions. I train a deep neural network model on the set before and after 
 clearing the duplicates and augmenting the set.
+
 The original set consists of around 376,000 images.
+
 There are many duplicate images, however. After clearing the dataset from all duplicates the number of images decreases to 83,000 images. In some of the classes there are only
 a few images left.
+
 I use the Augmentor library to create more samples. The types of image warpings I chose are random small rotations, elastic distortions and constrast changes.
 I increase the dataset to 225,000 by concentrating on the classes that had particularly few images.
 
