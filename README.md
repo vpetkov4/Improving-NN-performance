@@ -20,7 +20,7 @@ I increase the dataset to 225,000 by concentrating on the classes that had parti
 
 The preformance of the deep Convolutional Neural Network model was as expected. On the original data the validation accuracy was higher than the training accuracy, which is a good
 sign of data duplication. On the reduced data the mean accuracy was over 90% mostly due to the skewed data. The model performed particularly poorly on the sparse classes.
-After training the model on the augmented data, which does not contain duplicates, the performance improved. The lowest F1 score for a class improves from 0.15 to 0.73.
+After training the model on the augmented data, which does not contain duplicates, the performance improved significantly. The lowest F1 score for a class improves from 0.15 to 0.73.
 For most classes it is around 0.90.  
 
 
